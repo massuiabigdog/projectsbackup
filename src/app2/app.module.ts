@@ -9,16 +9,16 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { routing } from './app.routing';
 import { PageComponent } from './page/page.component';
-import { JobListComponent } from "./Job-list.component";
-import { JobDetailComponent } from "./Job-detail.component";
+import { DepartmentListComponent } from "./department-list.component";
+import { DepartmentDetailComponent } from "./department-detail.component";
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HeaderComponent,
     PageComponent,
-    JobDetailComponent,
-    JobListComponent,
+    DepartmentDetailComponent,
+    DepartmentListComponent,
  ],
   imports: [
     BrowserModule,

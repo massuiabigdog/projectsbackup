@@ -1,20 +1,20 @@
 import { Routes, RouterModule } from "@angular/router";
 import { AboutComponent } from "./about/about.component";
 import { PageComponent } from "./page/page.component";
-import { JobListComponent } from "./Job-list.component";
-import { JobDetailComponent } from "./Job-detail.component";
+import { DepartmentListComponent } from "./department-list.component";
+import { DepartmentDetailComponent } from "./department-detail.component";
 import { NgModule } from "@angular/core";
 
  const APP_ROUTES: Routes = [
          { path: '', redirectTo: '/about', pathMatch: 'full'},
          { path: 'about', component: AboutComponent},
 { path: 'page', component: PageComponent},   
-        { path: 'Jobs/:id', component: JobDetailComponent},
+        { path: 'departments/:id', component: DepartmentDetailComponent},
  ];
 
 // const routes: Routes = [
 //         { path: 'about', component: AboutComponent},
-//         { path: 'Jobs/:id', component: JobDetailComponent},
+//         { path: 'departments/:id', component: DepartmentDetailComponent},
 //         { path: 'page/:slug', component: PageComponent},        
         
 // ];
@@ -29,7 +29,7 @@ import { NgModule } from "@angular/core";
 })
 
 export class AppRoutingModule{}
-export const routingComponents = [PageComponent, AboutComponent, JobListComponent, JobDetailComponent]
+export const routingComponents = [PageComponent, AboutComponent, DepartmentListComponent, DepartmentDetailComponent]
 
 
 
