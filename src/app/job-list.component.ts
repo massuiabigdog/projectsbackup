@@ -16,6 +16,6 @@ export class JobListComponent {
         {"id": 3, "name": "Node"},
     ]
     onSelect(Job){
-        this.router.navigate(['/Jobs', Job.id]);
+        this.router.navigate(['/Jobs', Job.name]);
     }
 }

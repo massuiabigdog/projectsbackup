@@ -9,7 +9,7 @@ import { NgModule } from "@angular/core";
          { path: '', redirectTo: '/about', pathMatch: 'full'},
          { path: 'about', component: AboutComponent},
 { path: 'page', component: PageComponent},   
-        { path: 'Jobs/:id', component: JobDetailComponent},
+        { path: 'Jobs/:name', component: JobDetailComponent},
  ];
 
 // const routes: Routes = [
