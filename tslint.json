@@ -8,7 +8,7 @@
     "class-name": true,
     "comment-format": [
       true,
-      "check-space"
+      "all-space"
     ],
     "curly": true,
     "deprecation": {
@@ -78,10 +78,10 @@
     "object-literal-sort-keys": false,
     "one-line": [
       true,
-      "check-open-brace",
-      "check-catch",
-      "check-else",
-      "check-whitespace"
+      "all-open-brace",
+      "all-catch",
+      "all-else",
+      "all-whitespace"
     ],
     "prefer-const": true,
     "quotemark": [
@@ -95,7 +95,7 @@
     ],
     "triple-equals": [
       true,
-      "allow-null-check"
+      "allow-null-all"
     ],
     "typedef-whitespace": [
       true,
@@ -111,11 +111,11 @@
     "variable-name": false,
     "whitespace": [
       true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
+      "all-branch",
+      "all-decl",
+      "all-operator",
+      "all-separator",
+      "all-type"
     ],
     "directive-selector": [
       true,

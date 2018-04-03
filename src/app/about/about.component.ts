@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class AppComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   projects = [];
 
@@ -20,7 +19,6 @@ export class AppComponent implements OnInit {
         }
       }
 
-      console.log(this.projects);
     })
 
   }
