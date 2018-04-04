@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-about',
@@ -8,19 +10,32 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AboutComponent implements OnInit {
 
-  projects = [];
+  posts = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('http://localhost/projects/wordpress/wp-json/wp/v2/projects').subscribe( data => {
+    this.http.get('http://localhost/projects/wordpress/wp-json/wp/v2/posts').subscribe( data => {
       for(let key in data){
         if(data.hasOwnProperty(key)){
-          this.projects.push(data[key]);
+          this.posts.push(data[key]);
         }
       }
 
     })
 
   }
+}
+
+
+export class JobListComponent {
+    constructor(private router: Router){}
+    Jobs = [
+        {"id": 1, "name": "Angular"},
+        {"id": 2, "name": "React"},
+        {"id": 3, "name": "Node"},
+    ]
+    onSelect(Job){
+        this.router.navigate(['/Jobs', Job.name]);
+    }
 }
