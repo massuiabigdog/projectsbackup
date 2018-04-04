@@ -11,7 +11,7 @@ import { PostComponent } from './post/post.component';
 import { NgModule } from "@angular/core";
 
  const APP_ROUTES: Routes = [
-         { path: '', redirectTo: '/about', pathMatch: 'full'},
+         { path: '', redirectTo: '/home', pathMatch: 'full'},
          { path: 'about', component: AboutComponent},
         { path: 'page', component: PageComponent},   
         { path: 'home', component: HomeComponent},   
