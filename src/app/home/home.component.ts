@@ -16,10 +16,11 @@ export class HomeComponent implements OnInit {
             result => this.posts = result,
             error => console.error('Error: ')
         );
+        console.log(this.posts);
     }
 
     ngOnInit() {
     }
 
 }
-
+    

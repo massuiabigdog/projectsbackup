@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { routing} from './app.routing';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { appRoutingProviders }  from './app.routes';
 import { PageComponent } from './page/page.component';
 import { JobListComponent } from "./Job-list.component";
@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     HeaderComponent,
     PageComponent,
+    
     JobDetailComponent,
     JobListComponent,
     PostComponent,
@@ -31,9 +32,11 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     routing,
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class PizzaPartyAppModule { }

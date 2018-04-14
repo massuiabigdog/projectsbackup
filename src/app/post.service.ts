@@ -13,13 +13,17 @@ export class PostService {
   getAll() {
       return this.http.get(this.endpoint)
           .map(response => response.json());
+          
   }
 
 
   getPost(id) {
       return this.http.get(this.endpoint + '/' +  id)
           .map(response => response.json());
+          
   }
 
 
 }
+
+//     })

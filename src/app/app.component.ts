@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { NgModule } from '@angular/core';
+import { hammerjs} from 'hammerjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+})
+@NgModule({
+  imports: [MatButtonModule, MatCheckboxModule],
 })
 
 export class AppComponent {
@@ -15,6 +20,8 @@ export class AppComponent {
   }
 
 }
+
+
 
 // export class AppComponent implements OnInit {
 
