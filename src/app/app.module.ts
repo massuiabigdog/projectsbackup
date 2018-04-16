@@ -8,8 +8,9 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
-import { routing} from './app.routing';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { routing } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { appRoutingProviders }  from './app.routes';
 import { PageComponent } from './page/page.component';
 import { JobListComponent } from "./Job-list.component";

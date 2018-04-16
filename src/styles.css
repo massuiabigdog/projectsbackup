@@ -1,1 +1,471 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* 
+/*GENERAL STYLES*/
+body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, section, article, figure, aside {
+	display: block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+	margin: 0 0 60px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	color: #414340;
+	background: #fff;
+	cursor: default;
+	
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -html-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section {
+	margin-bottom: 40px;
+	padding: 20px 0;
+}
+
+a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #00bbf0;
+	cursor: pointer;
+}
+a:hover {color: #00a1df;}
+p a:hover {background: #dcfaff;}
+
+h1 {
+	margin: 10 0 0px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+h2 {
+	margin: 0 0 24px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+h3 {
+	margin: 0 0 16px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+h2, p, ul, ol {
+	margin: 0 0 24px;
+	line-height: 24px;
+}
+
+ul, ol {padding: 0 0 0 10px;}
+li {margin: 0 0 6px;}
+
+.dark {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 5px 15px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+	background: none;
+	border: solid 1px #333;
+	border-radius: 2px;
+	transition: background ease-out .5s;
+}
+a:hover.dark {
+	color: #000;
+	background: rgba(255,255,255,.10);
+}
+
+.ghost {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 5px 15px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	background: none;
+	border: solid 1px #fff;
+	border-radius: 2px;
+	transition: background ease-out .5s;
+}
+a:hover.ghost {
+	color: #fff;
+	background: rgba(255,255,255,.25);
+}
+
+.ghost-dark {color: #414340; border: solid 1px #414340;}
+a:hover.ghost-dark {color:#414340; background: rgba(65,67,64,.25);}
+
+.ghost-gray {color: #414340; border: solid 1px #ccc;}
+a:hover.ghost-gray {color: #414340; background: rgba(170,170,170,.25);}
+
+.ghost-brown {color: #754c24; border: solid 1px #754c24;}
+a:hover.ghost-brown {color:#754c24; background: rgba(117,76,36,.25);}
+
+.ghost-blue {color: #001e4b; border: solid 1px #001e4b;}
+a:hover.ghost-blue {color:#001e4b; background: rgba(0,30,75,.25);}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col-2 {
+	display: inline-block;
+	width: 46%;
+	padding: 0 2%;
+}
+
+.feat {display: inline; font-weight: bold;}
+
+/* HEADER */
+header {
+	min-height: 60px;
+	padding: 20px 0 0;
+	text-align: right;
+	color: #fff;
+    background: #673ab7;
+    background: -webkit-linear-gradient(to top, #673ab7, #7E57C2);
+    background: linear-gradient(to top, #673ab7, #7E57C2);
+	border-bottom: 1px solid #fff;
+}
+
+header a {
+	display: inline-block;
+	height: 40px;
+	padding: 0 10px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 2px;
+}
+header a:hover {
+	color: #fff;
+	background: rgba(255,255,255,.2);
+}
+header a:active {
+	color: #fff;
+	background: rgba(255,255,255,.4);
+}
+
+#logo {
+	float: left;
+	width: 170px;
+	padding: 0;
+}
+a:hover#logo, a:active#logo {background: none;}
+
+#logo img {
+	margin-left: -10px;
+	padding-top: 4px;
+}
+
+/* BANNER */
+#banner {
+	min-height: 360px;
+	margin-bottom: 20px;
+	padding: 15px 0 30px;
+	font-size: 0;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#hero {
+	min-height: 360px;
+	margin: 32px 0 0;
+}
+
+#hero img {
+	width: 100%;
+	max-width: 360px;
+}
+
+#client-logo {
+	width: 150px;
+	min-height: 100px;
+	margin: 0 0 20px;
+}
+
+#client-logo img {height: 100%;}
+
+#banner h1 {margin: 0 0 10px; font-weight: 700;}
+
+#banner p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+/* PROJECTS */
+#projects {font-size: 0;}
+
+.tile {
+	display: inline-block;
+	width: 23%;
+	height: 35px;
+	margin: 0 1% 20px;
+	padding: 65px 0 10px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 15px;
+	vertical-align: top;
+	overflow: hidden;
+	color: rgba(255,255,255,1);
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	border-radius: 2px;
+	opacity: 1;
+	transition: opacity ease-out .4s;
+}
+a:hover.tile {color: rgba(255,255,255,.75); opacity: .5;}
+
+a:hover.white-text {color: rgba(255,255,255,.75);}
+
+.tile-all {
+	font-style: #ffffff;
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #27baef;
+	/*background-image: url(../images/icons/all.png);
+*/	background-position: top;
+}
+
+.tile-okt {background-color: #1fbbee; /*background-image: url(../images/icons/oktana-logo.png);*/}
+.tile-sf {background-color: #1869af; /*background-image: url(../images/icons/salesforce-logo.png);*/}
+
+.tile-360 {background-color: #f39c12; /*background-image: url(../images/360/wlogo.png); */background-size: 108px 72px; background-position: center -4px;}
+.tile-sf-adv {background-color: #263e60; /*background-image: url(../images/advantage/logo.png); */background-size: 90px 60px; background-position: center 4px;}
+.tile-sf-cc {background-color: #1869af; /*background-image: url(../images/sellmore/logo.png); */background-size: 108px 72px; background-position: center -4px;}
+.tile-sf-dev {background-color: #263e60; /*background-image: url(../images/developers/logo.png); */background-size: 90px 60px; background-position: center 4px;}
+.tile-sf-mkt {background-color: #1869af; /*background-image: url(../images/marketing/logo.png); */background-size: 108px 72px; background-position: center -4px;}
+.tile-medzed {background-color: #02b79c; /*background-image: url(../images/medzed/medzed-logo.png);*/}
+.tile-chatter {background-color: #1fbbee; /*background-image: url(../images/icons/chatter-logo.png);*/}
+.tile-components {background-color: #73bf45; /*background-image: url(../images/icons/oktana-logo.png);*/}
+.tile-tact {background-color: #f39c12; /*background-image: url(../images/icons/tactile-logo.png);*/}
+.tile-timebook {background-color: #1fbbee; /*background-image: url(../images/icons/timetracker-logo.png);*/}
+.tile-jobscience {background-color: #1fbbee; /*background-image: url(../images/icons/jobscience-logo.png);*/}
+.tile-geekhunter {background-color: #6e2b78; /*background-image: url(../images/icons/geekhunter-logo.png);*/}
+.tile-conektta {background-color: #2b467d; /*background-image: url(../images/conektta/conektta-logo.png);*/}
+/* TECHNOLOGIES */
+
+.line {
+	width: 60%;
+	opacity: 0.2;
+}
+
+#tech {
+	max-width: 100%;
+	margin: 0 auto 0px;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+}
+
+.tech {
+	display: inline-block;
+	margin: 0 2px 4px;
+	padding: 0 8px 0 36px;
+	font-size: 12px;
+	font-weight: 400px;
+	line-height: 32px;
+	vertical-align: top;
+	color: #000;
+	/*background-image: url(../images/tech/default.png);
+*/	background-repeat: no-repeat;
+	background-position: 8px 4px;
+	border: solid 1px #CCC;
+	border-radius: 2px;
+	opacity: .5;
+}
+
+.tech-pageflow {/*background-image: url(../images/tech/pageflow.png);*/}
+.tech-prototype {/*background-image: url(../images/tech/prototype.png);*/}
+.tech-research {/*background-image: url(../images/tech/research.png);*/}
+.tech-specs {/*background-image: url(../images/tech/specs.png);*/}
+.tech-ui {/*background-image: url(../images/tech/ui.png);*/}
+.tech-wireframe {/*background-image: url(../images/tech/wireframe.png);*/}
+
+#projects .tech {
+	background-color: #fff;
+	transition: all ease-out .3s;
+	cursor: pointer;
+}
+
+#projects li:hover.tech {
+	border: solid 1px #00bbf0;
+	opacity: 1;
+}
+
+#projects .selected-tech {
+	color: #00bbf0;
+	background-color: #ddf6ff;
+	border: solid 1px #00bbf0;
+	opacity: 1;
+}
+
+#projects li:hover.tech-pageflow, #projects .tech-pageflow.selected-tech {
+	/*background-image: url(../images/tech/active-pageflow.png);*/
+}
+#projects li:hover.tech-prototype, #projects .tech-prototype.selected-tech {
+	/*background-image: url(../images/tech/active-prototype.png);*/
+}
+#projects li:hover.tech-research, #projects .tech-research.selected-tech {
+	/*background-image: url(../images/tech/active-research.png);*/
+}
+#projects li:hover.tech-specs, #projects .tech-specs.selected-tech {
+	/*background-image: url(../images/tech/active-specs.png);*/
+}
+#projects li:hover.tech-ui, #projects .tech-ui.selected-tech {
+	/*background-image: url(../images/tech/active-ui.png);*/
+}
+#projects li:hover.tech-wireframe, #projects .tech-wireframe.selected-tech {
+	/*background-image: url(../images/tech/active-wireframe.png);*/
+}
+
+/* METRICS */
+#metrics {
+	margin-bottom: 40px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#metrics li {
+	display: inline-block;
+	width: 26%;
+	min-width: 80px;
+	padding: 90px 2% 0;
+	font-size: 14px;
+	font-weight: 200px;
+	line-height: 14px;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#metrics span {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+
+/* GALLERY */
+.gallery {font-size: 0;}
+
+.gallery figure {
+	display: inline-block;
+	width: 31%;
+	padding: 0 2% 30px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.gallery img {
+	max-width: 100%;
+	max-height: 150px;
+}
+
+.gallery img.screen {
+	border: 1px solid rgba(0,0,0,.15);
+}
+
+.gallery figcaption {
+	display: none;
+	text-align: center;
+}
+
+.pswp .pswp__caption__center{
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+	.tile {
+		width: 31%;
+		min-width: auto;
+		margin: 0 1% 20px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+    header {min-height: 60px; padding: 15px 0 0;}
+	#logo {
+		width: 60px;
+		height: 0;
+		padding: 40px 0 0;
+		overflow: hidden;
+		/* background: url(../images/icons/logo.png) no-repeat center; */
+	}
+	#logo img {width: 0;}
+	
+	.col-2 {
+		display: block;
+		width: 90%;
+		margin-bottom: 20px;
+		padding: 0 5%;
+	}
+	#banner {padding: 10px;}
+	#hero {min-height: 300px; text-align: center;}
+	#client-logo {width: 120px; min-height: 60px; margin: 20px 0 0;}
+	.tile {
+		width: 48%;
+		margin: 0 1% 15px;
+	}
+}
+
+
+
+@media screen and (max-width: 400px) {
+	#logo {
+		width: 60px;
+		height: 0;
+		padding: 40px 0 0;
+		overflow: hidden;
+		/* background: url(../images/icons/logo.png) no-repeat center; */
+	}
+	#logo img {width: 0;}
+	.tile {
+		width: 78%;
+		height: 60px;
+		margin: 0 1% 10px;
+		padding: 0 0 0 20%;
+		text-align: left;
+		line-height: 60px;
+		background-position: 5px 5px;
+	}
+	.tile-360, .tile-desk, .tile-gbo, .tile-sf-adv, .tile-sf-cc, .tile-sf-dev, .tile-sf-mkt, .tile-startups {
+	background-size: auto;
+	/*background-image: url(../images/icons/salesforce-logo.png);*/
+	}
+
+	.tile-conektta {
+	background-size: auto;
+	/*background-image: url(../images/icons/conektta-logo.png);*/
+	}
+
+	.tile-all {
+	/*background-image: url(../images/icons/all2.png);
+*/
+}
+	
+	.gallery figure {width: 48%;}
+}
