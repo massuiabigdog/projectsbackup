@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class PostService {
 
-    endpoint = "http://localhost/projects/wp-json/wp/v2/projects";
+    endpoint = "http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects";
     
 
 
