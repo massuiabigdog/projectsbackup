@@ -9,8 +9,12 @@ import { HomeComponent } from './home/home.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'post/:id', component: PostComponent
+    path: 'post/:title', component: PostComponent
+  },
+  {
+    path: 'home', component: HomeComponent
   }
+
 ];
 
 export const appRoutingProviders: any[] = [

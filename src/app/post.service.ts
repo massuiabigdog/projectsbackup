@@ -5,10 +5,15 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class PostService {
 
-    endpoint = "http://localhost/projects/wordpress/wp-json/wp/v2/posts";
+    endpoint = "http://localhost/projects/wp-json/wp/v2/projects";
+    
 
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+
+    console.log(this.endpoint);
+
+   }
 
   getAll() {
       return this.http.get(this.endpoint)

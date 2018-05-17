@@ -1,15 +1,12 @@
-<p>
-  page works!
-</p>
-
-
-<div>
-  <ul>
-    <li *ngFor="let project of projects">
-      {{ project.title.rendered }}
-
-      <img src="{{ project.better_featured_image.media_details.sizes.medium.source_url }}" alt="{{ project.better_featured_image.alt_text}}">
-      
-    </li>
-  </ul>
+<div id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+	<div class='lightbox-content'>
+		<img src="https://blog.clippingcacd.com.br/wp-content/uploads/2018/05/Copy-of-Copy-of-enquire-about-our-courses-8-980x627.png">
+		<div class="lightbox-caption"><p>Your caption here</p></div>
+	</div>
 </div>
+
+<script src="./assets/lightbox/bootstrap-lightbox.js"></script>  
+<script>
+  $('#myLightbox').lightbox(options)
+
+</script>

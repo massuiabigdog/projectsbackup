@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { PostService } from '../post.service';
+
+
+
 @Component({
     selector: 'app-post',
     templateUrl: './post.component.html',
@@ -8,8 +11,8 @@ import { PostService } from '../post.service';
     providers: [PostService]
 })
 export class PostComponent implements OnInit {
-    usedtech: Array<any> = [];
-    hasLink = true;
+
+
     comments: Array<any> = [];
     posts:any;
 

@@ -1,0 +1,45 @@
+<section id="projects" class="wrapper">
+  <nav class="grid">
+      <div *ngFor="let post of posts">
+          <a href="chatter-en/index.html" class="tile tile-chatter filter-tech-ui filter-tech-wireframe filter-tech-apple filter-lightning">Chatter Desktop</a>
+          <a [routerLink]="['/post', post.id]" class="card-link"><div class="card ">
+            <div class="card-block">
+                  <img src="{{ post.better_featured_image.media_details.sizes.medium.source_url }}" alt="{{ post.better_featured_image.alt_text}}">
+                <h4 class="card-title">{{ post.title.rendered }}</h4>
+                <p class="card-text">{{ post.content.rendered  }}</p>
+              
+            </div>
+        </div>
+        </a>
+    </div>
+ <a href="chatter-en/index.html" class="tile tile-chatter filter-tech-ui filter-tech-wireframe filter-tech-apple filter-lightning">Chatter Desktop</a>
+   <a href="360-en/index.html" class="tile tile-360 filter-tech-pageflow filter-tech-js filter-tech-ui filter-tech-apple">Community Cloud 360</a>
+   <a href="conektta/index.html" class="tile tile-conektta">Conektta</a>
+   <a href="geekhunter-en/index.html" class="tile tile-geekhunter white-text filter-tech-sf">GeekHunter</a>
+   <a href="jobscience-en/index.html" class="tile tile-jobscience white-text filter-tech-sf">Job Science</a>
+   <a href="components-en/index.html" class="tile tile-components filter-tech-sf filter-tech-ui filter-lightning">Lightning Components</a>
+   <a href="medzed-en/index.html" class="tile tile-medzed white-text filter-tech-sf filter-tech-js">MedZed</a>
+   <a href="oktana-design-en/index.html" class="tile tile-okt filter-tech-ui">Oktana Design Projects</a>
+ 
+         <a href="developers-en/index.html" class="tile tile-sf-dev white-text filter-tech-sf filter-tech-ror filter-tech-ui">Salesforce Developers</a>
+     <a href="today-en/index.html" class="tile tile-sf white-text filter-tech-apple filter-tech-ui">Salesforce Today</a>
+   <a href="tact-en/index.html" class="tile tile-tact filter-tech-sf filter-tech-back filter-tech-js filter-tech-ui filter-tech-apple filter-tech-android">Tact for Salesforce</a>
+   <a href="timetracker-en/index.html" class="tile tile-timebook filter-tech-sf filter-tech-js filter-tech-ui">Time Tracker</a>
+
+ </nav>
+</section>
+
+
+<div class="col-md-6 col-md-pull-3">
+  <h2>Posts ({{ posts?.length }})</h2>
+  <div *ngFor="let post of posts">
+      <div class="card ">
+          <div class="card-block">
+              <h4 class="card-title">{{ post.title.rendered }}</h4>
+              <p class="card-text">{{ post.content.rendered }}</p>
+              <a [routerLink]="['/post', post.id]" class="card-link">Read more</a>
+          </div>
+      </div>
+  </div>
+</div>
+

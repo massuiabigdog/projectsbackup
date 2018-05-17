@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('http://localhost/projects/wp-json/wp/v2/projects').subscribe( data => {
+    this.http.get('http://localhost/projects/wordpress/wp-json/wp/v2/projects').subscribe( data => {
       for(let key in data){
         if(data.hasOwnProperty(key)){
           this.posts.push(data[key]);

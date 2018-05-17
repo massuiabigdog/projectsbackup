@@ -1,21 +1,53 @@
-<div class="row">
-  <div class="col-md-12">
-      <h1>{{ posts.title.rendered }}</h1>
-      <div>
-          {{ posts.content.rendered }}
-          <br>
-<<<<<<< HEAD
-          <p><strong>{{ posts.acf.title }}</strong>  {{ posts.acf.description }} </p>
-          <p> </p>
-          <br>
-         
+<section id="banner" class="topbanner container-fluid covered {{ posts.acf.tilecolor }}" >
 
-=======
-
-          <p> {{ posts?.acf.cover-image }}</p>
->>>>>>> parent of d853d6d... routing big improvment
+  <div class="wrapper" class="flex-display col-md-12 pt-50">
+      <div class="col-md-6 text-center">
+          <img src="{{ posts.acf.heroimage.sizes.medium }}">
       </div>
-      <hr>
+
+      <div class="col-md-6 mt-40">
+          <img class="mb-10" src="{{ posts.acf.clientlogo.sizes.large }}">
+          <h1>{{ posts.acf.titletitle }}</h1>
+          <p>{{ posts.acf.shortdescription }}</p>
+          <p *ngIf="!hasLink; else noLink"></p>
+          <ng-template #noLink><a class="ghost" href="{{ posts.acf.linktoproject }}" target="_blank">See Live</a></ng-template> 
+      </div>
+      
+    </div>
+</section>
+
+<section class="wrapper">
+    <ul id="tech"> {{ posts.acf.tech  }} </ul>
+ </section>
+
+ <section class="container">
+  <h2 class="text-center"> Screenshoots </h2>
+  <div class="gallery col-md-12">
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
+      <img class="example-image" src="{{ posts.acf.photo1.sizes.thumbnail }}" alt="{{ posts.acf.photo1.title }}" />
+    </a>
+
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo2.sizes.large }}" data-title="{{ posts.acf.photo2.title }}" data-lightbox="example-set">
+      <img class="example-image" src="{{ posts.acf.photo2.sizes.thumbnail }}" alt="" />
+    </a>
+
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo3.sizes.large }}" data-title="{{ posts.acf.photo3.title }}"  data-lightbox="example-set">
+      <img class="example-image" src="{{ posts.acf.photo3.sizes.thumbnail }}" alt="" />
+    </a>
+    
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo4.sizes.large }}" data-title="{{ posts.acf.photo4.title }}"  data-lightbox="example-set">
+      <img class="example-image" src="{{ posts.acf.photo4.sizes.thumbnail }}" alt="" />
+    </a>
+
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo5.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo5.title }}" >
+      <img class="example-image" src="{{ posts.acf.photo5.sizes.thumbnail }}" alt="" />
+    </a>
+    
+    <a class="example-image-link col-md-3" href="{{ posts.acf.photo6.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo6.title }}" >
+      <img class="example-image" src="{{ posts.acf.photo6.sizes.thumbnail }}" alt="" />
+    </a>
+       
     
   </div>
-</div>
+
+ </section>

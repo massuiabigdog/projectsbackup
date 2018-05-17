@@ -1,0 +1,9 @@
+.right-menu {
+    right: 20px!important;
+    position: absolute!important;
+}
+
+.logo-img {
+    width: 130px;
+    margin: 10px 0px;
+}

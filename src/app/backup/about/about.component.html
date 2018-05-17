@@ -1,0 +1,22 @@
+<div>
+  <h1>projects</h1>
+  <ul>
+    <li *ngFor="let post of posts">
+      {{ post.title.rendered }}<br>
+      {{ post.id}}<br>
+      {{ post.content.rendered}}<br>  
+      {{ post.acf.title}} <br>
+      {{ post.acf.description}}
+<br>
+      <!-- <img src="{{ project.better_featured_image.media_details.sizes.medium.source_url }}" alt="{{ project.better_featured_image.alt_text}}">
+       -->
+    </li>
+  </ul>
+</div>
+
+
+<ul class="items">
+  <li (click)="onSelect(Job)" *ngFor="let Job of Jobs">
+  <span> {{Job.id}}</span> {{Job.name}}
+  </li>
+  </ul>

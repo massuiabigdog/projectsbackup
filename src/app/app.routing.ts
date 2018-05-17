@@ -7,13 +7,15 @@ import { PageComponent } from "./page/page.component";
 import { JobListComponent } from "./Job-list.component";
 import { JobDetailComponent } from "./Job-detail.component";
 import { PostComponent } from './post/post.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { NgModule } from "@angular/core";
 
  const APP_ROUTES: Routes = [
-         { path: '', redirectTo: '/about', pathMatch: 'full'},
-         { path: 'about', component: AboutComponent},
+        { path: '', redirectTo: '/home', pathMatch: 'full'},
+        { path: 'about', component: AboutComponent},
         { path: 'page', component: PageComponent},   
+        { path: 'footer', component: HomeComponent},   
         { path: 'home', component: HomeComponent},   
         { path: 'post/:id', component: PostComponent},
         { path: 'Jobs/:name', component: JobDetailComponent},

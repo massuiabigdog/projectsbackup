@@ -1,4 +1,11 @@
 
+
+
+
+
+
+
+
 /* 
 /*GENERAL STYLES*/
 body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, section, article, figure, aside {
@@ -9,6 +16,36 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.tile-title {
+	text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.flex-display {
+	display: flex;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
 
 body {
 	margin: 0 0 60px;
@@ -215,23 +252,26 @@ a:hover#logo, a:active#logo {background: none;}
 #projects {font-size: 0;}
 
 .tile {
-	display: inline-block;
-	width: 23%;
-	height: 35px;
-	margin: 0 1% 20px;
-	padding: 65px 0 10px;
-	font-size: 13px;
-	text-align: center;
-	line-height: 15px;
-	vertical-align: top;
-	overflow: hidden;
-	color: rgba(255,255,255,1);
-	background-color: #eee;
-	background-repeat: no-repeat;
-	background-position: center 10px;
-	border-radius: 2px;
-	opacity: 1;
-	transition: opacity ease-out .4s;
+    display: inline-block;
+
+    min-width: 200px;
+
+    margin: 0 10px;
+    padding: 20px 0 10px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: top;
+    overflow: hidden;
+    color: rgba(255,255,255,1);
+    background-color: #eee;
+
+    border-radius: 2px;
+    opacity: 1;
+    -webkit-transition: opacity ease-out .4s;
+    transition: opacity ease-out .4s;
+    background-size: 108px 72px;
+    background-position: center -4px;
 }
 a:hover.tile {color: rgba(255,255,255,.75); opacity: .5;}
 
@@ -248,14 +288,16 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 
 .tile-okt {background-color: #1fbbee; /*background-image: url(../images/icons/oktana-logo.png);*/}
 .tile-sf {background-color: #1869af; /*background-image: url(../images/icons/salesforce-logo.png);*/}
+.tile-cyan {background-color: #1fbbee;}
 
-.tile-360 {background-color: #f39c12; /*background-image: url(../images/360/wlogo.png); */background-size: 108px 72px; background-position: center -4px;}
+
+.tile-360 {background-color: #f39c12; /*background-image: url(../images/360/wlogo.png); */}
 .tile-sf-adv {background-color: #263e60; /*background-image: url(../images/advantage/logo.png); */background-size: 90px 60px; background-position: center 4px;}
 .tile-sf-cc {background-color: #1869af; /*background-image: url(../images/sellmore/logo.png); */background-size: 108px 72px; background-position: center -4px;}
 .tile-sf-dev {background-color: #263e60; /*background-image: url(../images/developers/logo.png); */background-size: 90px 60px; background-position: center 4px;}
 .tile-sf-mkt {background-color: #1869af; /*background-image: url(../images/marketing/logo.png); */background-size: 108px 72px; background-position: center -4px;}
 .tile-medzed {background-color: #02b79c; /*background-image: url(../images/medzed/medzed-logo.png);*/}
-.tile-chatter {background-color: #1fbbee; /*background-image: url(../images/icons/chatter-logo.png);*/}
+
 .tile-components {background-color: #73bf45; /*background-image: url(../images/icons/oktana-logo.png);*/}
 .tile-tact {background-color: #f39c12; /*background-image: url(../images/icons/tactile-logo.png);*/}
 .tile-timebook {background-color: #1fbbee; /*background-image: url(../images/icons/timetracker-logo.png);*/}
@@ -287,8 +329,8 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 	line-height: 32px;
 	vertical-align: top;
 	color: #000;
-	/*background-image: url(../images/tech/default.png);
-*/	background-repeat: no-repeat;
+	background-image: url(specs.png);
+	background-repeat: no-repeat;
 	background-position: 8px 4px;
 	border: solid 1px #CCC;
 	border-radius: 2px;
@@ -379,8 +421,7 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 }
 
 .gallery img {
-	max-width: 100%;
-	max-height: 150px;
+width: auto;
 }
 
 .gallery img.screen {

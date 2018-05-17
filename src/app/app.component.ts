@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 import { NgModule } from '@angular/core';
 import { hammerjs} from 'hammerjs';
+
+declare var jquery:any;
+declare var $ :any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,34 +15,14 @@ import { hammerjs} from 'hammerjs';
   imports: [],
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
+    $('button').click(function()
+  {
+    alert('hi');
+  })
   }
-
 }
-
-
-
-// export class AppComponent implements OnInit {
-
-//   projects = [];
-
-//   constructor(private http: HttpClient) {}
-
-//   ngOnInit(): void {
-//     this.http.get('http://localhost/projects/wordpress/wp-json/wp/v2/projects').subscribe( data => {
-//       for(let key in data){
-//         if(data.hasOwnProperty(key)){
-//           this.projects.push(data[key]);
-//         }
-//       }
-
-//       console.log(this.projects);
-//     })
-
-//   }
-// }
-
