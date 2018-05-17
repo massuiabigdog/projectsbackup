@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { routing } from './app.routing';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { appRoutingProviders }  from './app.routes';
 import { PageComponent } from './page/page.component';
@@ -33,7 +33,6 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    BrowserAnimationsModule,
     routing,
   ],
   providers: [appRoutingProviders],
