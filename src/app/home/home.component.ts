@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
 
+declare var jquery:any;
+declare var $ :any;
+
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -17,6 +20,7 @@ export class HomeComponent implements OnInit {
             error => console.error('Error: ')
         );
         console.log(this.posts);
+        $( "#divloader" ).addClass( "hidden" );
     }
 
     ngOnInit() {

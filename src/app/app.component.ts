@@ -24,5 +24,10 @@ export class AppComponent implements OnInit {
   {
     alert('hi');
   })
+
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    // $( "#divloader" ).addClass( "hidden" );
+});
   }
 }

@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+declare var jquery:any;
+declare var $ :any;
+
 @Injectable()
 export class PostService {
 
@@ -27,8 +30,11 @@ export class PostService {
           .map(response => response.json());
           
   }
+      
+
 
 
 }
+$( "#divloader" ).addClass( "hidden" );
 
 //     })
