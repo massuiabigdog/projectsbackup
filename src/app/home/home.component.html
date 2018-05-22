@@ -15,13 +15,13 @@
   <div id="divloader">
     <div class="loader"></div>
   </div>
-    <section class="col-md-12">
+    <section class="col-md-12 container">
 
        
   <div class="flex">
       <div *ngFor="let post of posts" class="">
 
-        <a [routerLink]="['/post', post.id]" class="tile {{ post.acf.tilecolor }}">
+        <a [routerLink]="['/post', post.id]" class="col-md-3 col-lg-2 col-xs-12 tile {{ post.acf.tilecolor }}">
             <img src="{{ post.acf.clientlogo.sizes.large }}">
             <h3 class="tile-title">{{ post.title.rendered }}</h3>
         </a>

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { PostService } from '../post.service';
+declare var jquery:any;
+declare var $ :any;
 @Component({
     selector: 'app-post',
     templateUrl: './post.component.html',
@@ -32,6 +34,10 @@ export class PostComponent implements OnInit {
                 error => console.error('Error: ' + error)
             );
 
+            console.log( "ready!" );
+
+            console.log(this.posts);
+            $( "#divloader" ).addClass( "hidden" );
 
         });
 

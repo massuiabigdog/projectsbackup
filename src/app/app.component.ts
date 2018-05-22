@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { NgModule } from '@angular/core';
 import { hammerjs} from 'hammerjs';
+import { Spinkit } from 'ng-http-loader/spinkits';
 
 declare var jquery:any;
 declare var $ :any;
@@ -16,6 +17,7 @@ declare var $ :any;
 })
 
 export class AppComponent implements OnInit {
+  public spinkit = Spinkit;
 
   constructor() { }
 
@@ -30,4 +32,7 @@ export class AppComponent implements OnInit {
     // $( "#divloader" ).addClass( "hidden" );
 });
   }
+}
+export class LoadingComponent {
+  public spinkit = Spinkit;
 }

@@ -15,6 +15,7 @@ export class PostService {
   constructor(private http: Http) {
 
     console.log(this.endpoint);
+    $( "#divloader" ).addClass( "hidden" );
 
    }
 

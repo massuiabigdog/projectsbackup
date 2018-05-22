@@ -17,13 +17,21 @@ export class HomeComponent implements OnInit {
     constructor(private p: PostService) {
         this.p.getAll().subscribe(
             result => this.posts = result,
+
             error => console.error('Error: ')
+
         );
         console.log(this.posts);
         $( "#divloader" ).addClass( "hidden" );
+
+        $( document ).ready(function() {
+            $( "#divloader" ).addClass( "hidden" );
+        });
     }
 
     ngOnInit() {
+
+
     }
 
 }

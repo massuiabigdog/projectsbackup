@@ -1,3 +1,5 @@
+import { VERSION } from '@angular/core'
+
 import { BrowserModule } from '@angular/platform-browser';
 import { Jquery } from 'jquery/dist/jquery.min.js'
 import { NgModule } from '@angular/core';
@@ -15,6 +17,7 @@ import { JobDetailComponent } from "./Job-detail.component";
 import { PostComponent } from './post/post.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-
-    routing,
+    HttpClientModule,
+    NgHttpLoaderModule,
+    routing
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
