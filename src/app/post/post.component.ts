@@ -15,11 +15,22 @@ export class PostComponent implements OnInit {
     comments: Array<any> = [];
     posts:any;
 
+    
+
     constructor(
         private route: ActivatedRoute,
         private p: PostService,
   
-    ) { }
+    ) {
+        $( document ).ready(function() {
+            setTimeout(() => {
+                $( ".divloader" ).addClass( "hidden" );                
+            }, 600);
+
+        }
+        
+        
+     }
 
     ngOnInit() {
 

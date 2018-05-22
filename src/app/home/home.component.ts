@@ -22,10 +22,13 @@ export class HomeComponent implements OnInit {
 
         );
         console.log(this.posts);
-        $( "#divloader" ).addClass( "hidden" );
+
 
         $( document ).ready(function() {
-            $( "#divloader" ).addClass( "hidden" );
+            setTimeout(() => {
+                $( ".divloader" ).addClass( "hidden" );                
+            }, 1000);
+
         });
     }
 
