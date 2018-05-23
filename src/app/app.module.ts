@@ -17,7 +17,6 @@ import { JobDetailComponent } from "./Job-detail.component";
 import { PostComponent } from './post/post.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
     HttpModule,
     HttpClientModule,
     HttpClientModule,
-    NgHttpLoaderModule,
     routing
   ],
   providers: [appRoutingProviders],

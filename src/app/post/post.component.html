@@ -14,8 +14,7 @@
           <img class="mb-10" src="{{ posts.acf.clientlogo.sizes.large }}">
           <h1>{{ posts.acf.titletitle }}</h1>
           <p>{{ posts.acf.shortdescription }}</p>
-          <p *ngIf="!hasLink; else noLink"></p>
-          <ng-template #noLink><a class="ghost" href="{{ posts.acf.linktoproject }}" target="_blank">See Live</a></ng-template> 
+          <div *ngIf="posts.acf.linktoproject" #noLink><a class="ghost" href="{{ posts.acf.linktoproject }}" target="_blank">See Live</a></div> 
       </div>
       
     </div>
@@ -33,7 +32,7 @@
     -->
 
 
-  <li class="tech tech-research tech-array" *ngFor="let tech of posts.acf.tech"> {{ posts.acf.tech  }}</li>
+  <li class="tech tech-research tech-array" *ngFor="let foo of posts.acf.tech">{{foo}}</li>
 </div>
 <!-- 
 
