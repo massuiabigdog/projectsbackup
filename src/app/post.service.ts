@@ -9,14 +9,8 @@ declare var $ :any;
 export class PostService {
 
     endpoint = "http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects";
-    
-
-
   constructor(private http: Http) {
-
     console.log(this.endpoint);
-    $( "#divloader" ).addClass( "hidden" );
-
    }
 
   getAll() {
@@ -31,11 +25,4 @@ export class PostService {
           .map(response => response.json());
           
   }
-      
-
-
-
-}
-$( "#divloader" ).addClass( "hidden" );
-
-//     })
+ }

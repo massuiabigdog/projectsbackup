@@ -26,11 +26,8 @@ export class PostComponent implements OnInit {
             setTimeout(() => {
                 $( ".divloader" ).addClass( "hidden" );                
             }, 600);
-
-        }
-        
-        
-     }
+        }       
+        )}
 
     ngOnInit() {
 
@@ -44,11 +41,6 @@ export class PostComponent implements OnInit {
                 r => this.posts = r,
                 error => console.error('Error: ' + error)
             );
-
-            console.log( "ready!" );
-
-            console.log(this.posts);
-            $( "#divloader" ).addClass( "hidden" );
 
         });
 

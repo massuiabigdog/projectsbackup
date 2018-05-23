@@ -12,6 +12,9 @@ const appRoutes: Routes = [
     path: 'post/:title', component: PostComponent
   },
   {
+    path: 'post/:id-1', component: PostComponent
+  },
+  {
     path: 'home', component: HomeComponent
   }
 

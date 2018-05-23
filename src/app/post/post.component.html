@@ -21,9 +21,25 @@
     </div>
 </section>
 
+
+<div  class="wrapper">
+
+  <!-- <li class="tech tech-research">Research &amp; Study</li> : <li class="tech tech-research">Research &amp; Study</li>
+  <li class="tech tech-wireframe">Wireframe</li> : <li class="tech tech-wireframe">Wireframe</li>
+  <li class="tech tech-pageflow">Pageflow</li> : <li class="tech tech-pageflow">Pageflow</li>
+  <li class="tech tech-ui">Pixel Perfect Mockup</li> : <li class="tech tech-ui">Pixel Perfect Mockup</li>
+  <li class="tech tech-Prototype">Prototype</li> : <li class="tech tech-Prototype">Prototype</li>
+  <li class="tech tech-specs">Specs &amp; Assets</li> : <li class="tech tech-specs">Specs &amp; Assets</li>
+    -->
+
+
+  <li class="tech tech-research tech-array" *ngFor="let tech of posts.acf.tech"> {{ posts.acf.tech  }}</li>
+</div>
+<!-- 
+
 <section class="wrapper">
     <ul id="tech"> {{ posts.acf.tech  }} </ul>
- </section>
+ </section> -->
 
  <section class="container">
   <h2 class="text-center"> Screenshoots </h2>
