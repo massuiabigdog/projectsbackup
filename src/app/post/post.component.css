@@ -1,0 +1,5 @@
+.appheader {
+    background-color: rgba(0,0,0,0.2)!important;
+        margin-bottom: -60px;
+        z-index: 1;
+    }

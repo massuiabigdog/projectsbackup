@@ -1,3 +1,7 @@
 .flex {
     display: inline-flex;
 }
+
+.bg-primary {
+    height: 600px!important;
+}

@@ -10,7 +10,7 @@
           <img src="{{ posts.acf.heroimage.sizes.medium }}">
       </div>
 
-      <div class="col-md-6 mt-40">
+      <div class="col-md-6 mt-40 pb-20">
           <img class="mb-10" src="{{ posts.acf.clientlogo.sizes.large }}">
           <h1>{{ posts.acf.titletitle }}</h1>
           <p>{{ posts.acf.shortdescription }}</p>
@@ -19,28 +19,12 @@
       
     </div>
 </section>
-
-
-<div  class="wrapper">
-
-  <!-- <li class="tech tech-research">Research &amp; Study</li> : <li class="tech tech-research">Research &amp; Study</li>
-  <li class="tech tech-wireframe">Wireframe</li> : <li class="tech tech-wireframe">Wireframe</li>
-  <li class="tech tech-pageflow">Pageflow</li> : <li class="tech tech-pageflow">Pageflow</li>
-  <li class="tech tech-ui">Pixel Perfect Mockup</li> : <li class="tech tech-ui">Pixel Perfect Mockup</li>
-  <li class="tech tech-Prototype">Prototype</li> : <li class="tech tech-Prototype">Prototype</li>
-  <li class="tech tech-specs">Specs &amp; Assets</li> : <li class="tech tech-specs">Specs &amp; Assets</li>
-    -->
-
-
-  <li class="tech tech-research tech-array" *ngFor="let foo of posts.acf.tech">{{foo}}</li>
+<app-curve></app-curve>
+<div  class="text-center wrapper">
+  <li class=" tech tech-research tech-array" *ngFor="let usedtechs of posts.acf.tech">{{usedtechs}}</li>
 </div>
-<!-- 
 
-<section class="wrapper">
-    <ul id="tech"> {{ posts.acf.tech  }} </ul>
- </section> -->
-
- <section class="container">
+<section class="container">
   <h2 class="text-center"> Screenshoots </h2>
   <div class="gallery col-md-12">
     <a class="example-image-link col-md-3" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
@@ -66,8 +50,6 @@
     <a class="example-image-link col-md-3" href="{{ posts.acf.photo6.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo6.title }}" >
       <img class="example-image" src="{{ posts.acf.photo6.sizes.thumbnail }}" alt="" />
     </a>
-       
     
   </div>
-
  </section>

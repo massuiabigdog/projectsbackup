@@ -8,6 +8,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
+import { CurveComponent } from './curve/curve.component';
+
 import { routing } from './app.routing';
 
 import { appRoutingProviders }  from './app.routes';
@@ -29,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     JobListComponent,
     PostComponent,
     HomeComponent,
+    CurveComponent,
  ],
   imports: [
     BrowserModule,

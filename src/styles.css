@@ -1,6 +1,9 @@
-
 .show {
 	display: block!important;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
 }
 
 .hidden {
@@ -84,7 +87,7 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 
 body {
 	margin: 0 0 60px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
@@ -108,7 +111,7 @@ section {
 a {
 	font-weight: 500;
 	text-decoration: none;
-	color: #00bbf0;
+	color: #6a3db8;
 	cursor: pointer;
 }
 a:hover {color: #00a1df;}
@@ -250,8 +253,8 @@ a:hover#logo, a:active#logo {background: none;}
 /* BANNER */
 #banner {
 	min-height: 360px;
-	margin-bottom: 20px;
-	padding: 15px 0 30px;
+	margin-bottom: -15px;
+	padding: 15px 0 80px;
 	font-size: 0;
 	color: #fff;
 	background-repeat: no-repeat;
@@ -386,14 +389,14 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 }
 
 #projects li:hover.tech {
-	border: solid 1px #00bbf0;
+	border: solid 1px #6a3db8;
 	opacity: 1;
 }
 
 #projects .selected-tech {
-	color: #00bbf0;
+	color: #6a3db8;
 	background-color: #ddf6ff;
-	border: solid 1px #00bbf0;
+	border: solid 1px #6a3db8;
 	opacity: 1;
 }
 
@@ -479,6 +482,18 @@ width: auto;
 		width: 31%;
 		min-width: auto;
 		margin: 0 1% 20px;
+	}
+	#banner {
+		min-height: 360px;
+		margin-bottom: 30px;
+		padding: 15px 0 30px;
+		font-size: 0;
+		color: #fff;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+	.responsive-curve {
+		display: none;
 	}
 }
 
