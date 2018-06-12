@@ -21,14 +21,14 @@ export class AboutComponent implements OnInit {
     console.log( "start!" );
 
 
-    this.http.get('http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects').subscribe( data => {
+    this.http.get('http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects?per_page=100').subscribe( data => {
       
       for(let key in data){
         if(data.hasOwnProperty(key)){
           this.posts.push(data[key]);
         }
       }
-      console.log( "ready!" );
+
 
       console.log(this.posts);
       $( "#divloader" ).addClass( "hidden" );
