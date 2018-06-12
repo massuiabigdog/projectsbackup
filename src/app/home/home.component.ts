@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../post.service';
+import { HomePostService } from '../homepost.service';
 
 declare var jquery:any;
 declare var $ :any;
@@ -8,13 +8,13 @@ declare var $ :any;
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
-    providers: [PostService]
+    providers: [HomePostService]
 })
 export class HomeComponent implements OnInit {
 
     posts:Array<any> = [];
 
-    constructor(private p: PostService) {
+    constructor(private p: HomePostService) {
         this.p.getAll().subscribe(
             result => this.posts = result,
 

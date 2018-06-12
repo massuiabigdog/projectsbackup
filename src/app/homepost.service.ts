@@ -6,9 +6,9 @@ declare var jquery:any;
 declare var $ :any;
 
 @Injectable()
-export class PostService {
+export class HomePostService {
 
-    endpoint = "http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects";
+    endpoint = "http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects?per_page=100";
   constructor(private http: Http) {
     console.log(this.endpoint);
    }
