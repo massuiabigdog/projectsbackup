@@ -26,30 +26,36 @@
 
 <section class="container">
   <h2 class="text-center"> Screenshoots </h2>
-  <div class="gallery col-md-12">
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
-      <img class="example-image" src="{{ posts.acf.photo1.sizes.thumbnail }}" alt="{{ posts.acf.photo1.title }}" />
-    </a>
+      <div class="gallery col-md-12">
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
+          <img class="example-image" src="{{ posts.acf.photo1.sizes.thumbnail }}" alt="{{ posts.acf.photo1.title }}" />
+        </a>
 
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo2.sizes.large }}" data-title="{{ posts.acf.photo2.title }}" data-lightbox="example-set">
-      <img class="example-image" src="{{ posts.acf.photo2.sizes.thumbnail }}" alt="" />
-    </a>
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo2.sizes.large }}" data-title="{{ posts.acf.photo2.title }}" data-lightbox="example-set">
+          <img class="example-image" src="{{ posts.acf.photo2.sizes.thumbnail }}" alt="" />
+        </a>
 
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo3.sizes.large }}" data-title="{{ posts.acf.photo3.title }}"  data-lightbox="example-set">
-      <img class="example-image" src="{{ posts.acf.photo3.sizes.thumbnail }}" alt="" />
-    </a>
-    
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo4.sizes.large }}" data-title="{{ posts.acf.photo4.title }}"  data-lightbox="example-set">
-      <img class="example-image" src="{{ posts.acf.photo4.sizes.thumbnail }}" alt="" />
-    </a>
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo3.sizes.large }}" data-title="{{ posts.acf.photo3.title }}"  data-lightbox="example-set">
+          <img class="example-image" src="{{ posts.acf.photo3.sizes.thumbnail }}" alt="" />
+        </a>
+        
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo4.sizes.large }}" data-title="{{ posts.acf.photo4.title }}"  data-lightbox="example-set">
+          <img class="example-image" src="{{ posts.acf.photo4.sizes.thumbnail }}" alt="" />
+        </a>
 
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo5.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo5.title }}" >
-      <img class="example-image" src="{{ posts.acf.photo5.sizes.thumbnail }}" alt="" />
-    </a>
-    
-    <a class="example-image-link col-md-3" href="{{ posts.acf.photo6.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo6.title }}" >
-      <img class="example-image" src="{{ posts.acf.photo6.sizes.thumbnail }}" alt="" />
-    </a>
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo5.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo5.title }}" >
+          <img class="example-image" src="{{ posts.acf.photo5.sizes.thumbnail }}" alt="" />
+        </a>
+        
+        <a class="example-image-link col-md-3" href="{{ posts.acf.photo6.sizes.large }}" data-lightbox="example-set" data-title="{{ posts.acf.photo6.title }}" >
+          <img class="example-image" src="{{ posts.acf.photo6.sizes.thumbnail }}" alt="" />
+        </a>
     
   </div>
  </section>
+ <p id="demo"></p>
+
+ <script>
+ document.getElementById("demo").innerHTML = '{{ posts.content.rendered}}';
+ </script>
+ 

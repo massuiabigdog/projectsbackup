@@ -163,20 +163,30 @@ a:hover.dark {
 	background: rgba(255,255,255,.10);
 }
 
+a {
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    /* transition: all 0.3s; */
+}
 .ghost {
-	display: inline-block;
-	margin: 0 5px 0 0;
-	padding: 5px 15px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 8px 20px;
 	font-size: 14px;
-	text-transform: uppercase;
-	color: #fff;
-	background: none;
-	border: solid 1px #fff;
+	text-decoration: blink!important;
+    text-transform: uppercase;
+    color: #fff;
+    background: none;
+    border: solid 2px #fff;
 	border-radius: 2px;
-	transition: background ease-out .5s;
+
+	font-weight: 600;
+    border-radius: 20px;
 }
 a:hover.ghost {
 	color: #fff;
+	padding: 8px 30px;
 	background: rgba(255,255,255,.25);
 }
 
@@ -478,11 +488,7 @@ width: auto;
 }
 
 @media screen and (max-width: 960px) {
-	.tile {
-		width: 31%;
-		min-width: auto;
-		margin: 0 1% 20px;
-	}
+	
 	#banner {
 		min-height: 360px;
 		margin-bottom: 30px;
@@ -517,10 +523,7 @@ width: auto;
 	#banner {padding: 10px;}
 	#hero {min-height: 300px; text-align: center;}
 	#client-logo {width: 120px; min-height: 60px; margin: 20px 0 0;}
-	.tile {
-		width: 48%;
-		margin: 0 1% 15px;
-	}
+	
 }
 
 
@@ -534,15 +537,7 @@ width: auto;
 		/* background: url(../images/icons/logo.png) no-repeat center; */
 	}
 	#logo img {width: 0;}
-	.tile {
-		width: 78%;
-		height: 60px;
-		margin: 0 1% 10px;
-		padding: 0 0 0 20%;
-		text-align: left;
-		line-height: 60px;
-		background-position: 5px 5px;
-	}
+	
 	.tile-360, .tile-desk, .tile-gbo, .tile-sf-adv, .tile-sf-cc, .tile-sf-dev, .tile-sf-mkt, .tile-startups {
 	background-size: auto;
 	/*background-image: url(../images/icons/salesforce-logo.png);*/
