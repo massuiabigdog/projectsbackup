@@ -1,3 +1,23 @@
 #footer {
+background-color: #673ab7;
+color: #fff;
+padding-top: 120px;
+}
 
+#footer > div {
+
+padding: 0 30px;
+}
+
+.footer-copyright {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.footer-copyright > a {
+color: #ffc107
+}
+
+.responsive-curve {
+    fill: #fff;
+    stroke: #fff;
 }

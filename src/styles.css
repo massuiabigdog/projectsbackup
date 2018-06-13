@@ -6,6 +6,18 @@
 	padding-bottom: 20px;
 }
 
+.btn-alternative {
+	background-color: #ffc107!important;
+	color: #673ab7!important;
+	border-color: #ffc107!important;
+}
+
+.btn-alternative:hover {
+	background-color: #673ab7!important;
+	color: #ffc107!important;
+	border-color: #ffc107!important;
+}
+
 .hidden {
 	display: none!important;
 }
@@ -81,12 +93,15 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 	margin-top: 40px;
 }
 
+.mb-20 {
+	margin-bottom: 20px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
 }
 
 body {
-	margin: 0 0 60px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
