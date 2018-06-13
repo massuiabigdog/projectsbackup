@@ -302,10 +302,10 @@ a:hover#logo, a:active#logo {background: none;}
 .tile {
     display: inline-block;
 
-    min-width: 200px;
+    min-width: 100%;
 
-    margin: 0 10px;
-    padding: 20px 0 10px;
+    margin: 10px 10px;
+    padding: 10px 0 10px;
     font-size: 13px;
     text-align: center;
     line-height: 15px;
@@ -334,25 +334,19 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 */	background-position: top;
 }
 
-.tile-okt {background-color: #1fbbee; /*background-image: url(../images/icons/oktana-logo.png);*/}
-.tile-sf {background-color: #1869af; /*background-image: url(../images/icons/salesforce-logo.png);*/}
+
+.tile-blue {background-color: #1869af;}
 .tile-cyan {background-color: #1fbbee;}
+.tile-yellow {background-color: #FFC107	;}
+.tile-orange {background-color: #FF9800;}
+.tile-lightgreen {background-color: #8BC34A	;}
+.tile-purple {background-color: #7B1FA2	;}
+.tile-darkblue {background-color: #1A237E;}
 
 
-.tile-360 {background-color: #f39c12; /*background-image: url(../images/360/wlogo.png); */}
-.tile-sf-adv {background-color: #263e60; /*background-image: url(../images/advantage/logo.png); */background-size: 90px 60px; background-position: center 4px;}
-.tile-sf-cc {background-color: #1869af; /*background-image: url(../images/sellmore/logo.png); */background-size: 108px 72px; background-position: center -4px;}
-.tile-sf-dev {background-color: #263e60; /*background-image: url(../images/developers/logo.png); */background-size: 90px 60px; background-position: center 4px;}
-.tile-sf-mkt {background-color: #1869af; /*background-image: url(../images/marketing/logo.png); */background-size: 108px 72px; background-position: center -4px;}
-.tile-medzed {background-color: #02b79c; /*background-image: url(../images/medzed/medzed-logo.png);*/}
-
-.tile-components {background-color: #73bf45; /*background-image: url(../images/icons/oktana-logo.png);*/}
-.tile-tact {background-color: #f39c12; /*background-image: url(../images/icons/tactile-logo.png);*/}
-.tile-timebook {background-color: #1fbbee; /*background-image: url(../images/icons/timetracker-logo.png);*/}
-.tile-jobscience {background-color: #1fbbee; /*background-image: url(../images/icons/jobscience-logo.png);*/}
-.tile-geekhunter {background-color: #6e2b78; /*background-image: url(../images/icons/geekhunter-logo.png);*/}
-.tile-conektta {background-color: #2b467d; /*background-image: url(../images/conektta/conektta-logo.png);*/}
-/* TECHNOLOGIES */
+.m-auto {
+	margin: auto;
+}
 
 .line {
 	width: 60%;

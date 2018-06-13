@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { PostService } from '../post.service';
-import { CurveComponent} from '../curve/curve.component'
+import { CurveComponent} from '../curve/curve.component';
+import { lightbox2 } from 'lightbox2'
 declare var jquery:any;
 declare var $ :any;
 @Component({

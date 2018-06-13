@@ -20,13 +20,16 @@
     <section class="col-md-12 container">
 
        
-  <div class="row">
-      <div *ngFor="let post of posts" class="">
+  <div class="row container m-auto">
+      <div *ngFor="let post of posts" class="col-md-3 col-lg-3 col-xs-12">
 
-        <a [routerLink]="['/post', post.id]" class="col-md-3 col-lg-2 col-xs-12 tile {{ post.acf.tilecolor }}">
+        <a [routerLink]="['/post', post.id]" class=" tile {{ post.acf.tilecolor }}">
+          <div style="height: 100px">
             <img src="{{ post.acf.clientlogo.url }}">
+          </div>
             <h3 class="tile-title">{{ post.title.rendered }}</h3>
-        </a>
+          
+          </a>
 
     </div>
 

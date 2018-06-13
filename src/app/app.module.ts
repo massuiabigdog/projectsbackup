@@ -12,6 +12,7 @@ import { CurveComponent } from './curve/curve.component';
 
 import { routing } from './app.routing';
 
+import { lightbox2 } from 'lightbox2';
 import { appRoutingProviders }  from './app.routes';
 import { PageComponent } from './page/page.component';
 import { JobListComponent } from "./Job-list.component";
@@ -38,7 +39,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpModule,
     HttpClientModule,
     HttpClientModule,
-    routing
+    routing,
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

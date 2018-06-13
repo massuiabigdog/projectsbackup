@@ -25,4 +25,6 @@ export class HomePostService {
           .map(response => response.json());
           
   }
+
  }
+ console.log(this.posts);
