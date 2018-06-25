@@ -2,8 +2,38 @@
 	display: block!important;
 }
 
+
+.responsive-hr {
+	display: none;
+}
+.screenshots > a {
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	opacity: 0.5;
+    font-size: 12px;
+	text-transform: uppercase;
+}
+
+
+.bg-primary {
+    background-color: #673ab7!important;
+}
+
 .pb-20 {
 	padding-bottom: 20px;
+}
+
+.btn-light {
+	background-color: #fff!important;
+	color: #673ab7!important;
+	border-color: #673ab7!important;
+}
+
+.btn-light:hover {
+	background-color: #673ab7!important;
+	color: #ffc107!important;
 }
 
 .btn-alternative {
@@ -31,6 +61,89 @@
     height: 100%;
   }
   
+
+  #loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background: #673ab7;
+    background: -webkit-linear-gradient(to top, #673ab7, #7E57C2);
+    background: linear-gradient(to top, #673ab7, #7E57C2);
+    z-index: 999999;
+    text-align: center;
+}
+
+.loading-div {
+           height: 100%;
+    top: 40%!important;
+    position: relative!important;
+}
+
+
+  .radar-spinner, .radar-spinner * {
+      box-sizing: border-box;
+    }
+
+    .radar-spinner {
+      height: 60px;
+      width: 60px;
+      position: relative;
+      margin: auto;
+      top: 46%;
+    }
+
+    .radar-spinner .circle {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      animation: radar-spinner-animation 2s infinite;
+    }
+
+    .radar-spinner .circle:nth-child(1) {
+      padding: calc(60px * 5 * 2 * 0 / 110);
+      animation-delay: 300ms;
+    }
+
+    .radar-spinner .circle:nth-child(2) {
+      padding: calc(60px * 5 * 2 * 1 / 110);
+      animation-delay: 300ms;
+    }
+
+    .radar-spinner .circle:nth-child(3) {
+      padding: calc(60px * 5 * 2 * 2 / 110);
+      animation-delay: 300ms;
+    }
+
+    .radar-spinner .circle:nth-child(4) {
+      padding: calc(60px * 5 * 2 * 3 / 110);
+      animation-delay: 0ms;
+    }
+
+    .radar-spinner .circle-inner, .radar-spinner .circle-inner-container {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border: calc(60px * 5 / 110) solid transparent;
+    }
+
+    .radar-spinner .circle-inner {
+      border-left-color: #FFC107;
+      border-right-color: #FFC107;
+    }
+
+    @keyframes radar-spinner-animation {
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
 
 .loader {
 	border: 16px solid #f3f3f3;
@@ -510,10 +623,20 @@ width: auto;
 	.responsive-curve {
 		display: none;
 	}
+	#footer{
+		padding-top: 40px!important;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.responsive-hr {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 640px) {
-    header {min-height: 60px; padding: 15px 0 0;}
+   header {min-height: 60px; padding: 15px 0 0;}
 	#logo {
 		width: 60px;
 		height: 0;

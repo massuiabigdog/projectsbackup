@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- <link rel="stylesheet" href="/assets/bootstrap.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/lightbox/lightbox.min.css"     type="text/css" media="screen" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
 
@@ -20,6 +21,22 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/popper.js"></script>
 <script src="assets/js/bootstrap.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script>
+    var iso = $('.grid').isotope({
+      // options
+      itemSelector: '.tile',
+    });
+    var tech = $('#tech');
+    tech.on( 'click', '.tech', function() {
+      $(this).toggleClass('selected-tech', '');
+      var filterValue = $.makeArray(tech.find('.selected-tech').map(function(i, el){
+        return $(el).data('group');
+      })).join('');
+
+      iso.isotope({ filter: filterValue });
+    });
+    </script>
 <script src="assets/lightbox/lightbox.js"></script>  
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
