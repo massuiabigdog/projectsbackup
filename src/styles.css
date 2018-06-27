@@ -507,6 +507,11 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 	opacity: .5;
 }
 
+.actile-tech {
+	border: solid 1px #6a3db8;
+    opacity: 1;
+}
+
 .tech-pageflow {/*background-image: url(../images/tech/pageflow.png);*/}
 .tech-prototype {/*background-image: url(../images/tech/prototype.png);*/}
 .tech-research {/*background-image: url(../images/tech/research.png);*/}

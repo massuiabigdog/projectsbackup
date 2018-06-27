@@ -1,14 +1,13 @@
-
 <section id="projects" class="container mb-10">
         <h2 class="text-center">My Projects</h2>
         <div class="wrapper mb-10">
                 <ul id="tech">
-                     <li class="tech tech-research">Research &amp; Study</li>
-                      <li class="tech tech-wireframe">Wireframe</li>
-                      <li class="tech tech-pageflow">Pageflow</li>
-                      <li class="tech tech-ui">Pixel Perfect Mockup</li>
-                      <li class="tech tech-Prototype">Prototype</li>
-                    <li class="tech tech-specs">Specs &amp; Assets</li>            
+                     <li id="research" class="tech">Research, Study &amp; Pageflow</li>
+                      <li id="code" class="tech">Front-End Code</li>
+                      <li id="mkt" class="tech">Branding &amp; Marketing</li>
+                      <li id="ui" class="tech ">Pixel Perfect Mockup &amp; Prototype</li>
+                      <li id="ux" class="tech ">Information Architecture &amp; wireframe</li>
+                    <li id="specs" class="tech">Specs &amp; Assets</li>            
                   </ul>
                 </div>
                 </section>
@@ -21,9 +20,9 @@
 
        
   <div class="row m-auto">
-      <div *ngFor="let post of posts" class="col-md-4 col-lg-3 col-xs-12">
+      <div *ngFor="let post of posts" class="{{post.acf.hometech}} col-md-4 col-lg-3 col-xs-12">
 
-        <a [routerLink]="['/post', post.id]" class=" tile {{ post.acf.tilecolor }}">
+        <a [routerLink]="['/post', post.id]" class="tile  {{ post.acf.tilecolor }}">
           <div style="height: 100px">
             <img src="{{ post.acf.clientlogo.url }}">
           </div>
