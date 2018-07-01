@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { PostService } from '../post.service';
 import { CurveComponent} from '../curve/curve.component';
-import { lightbox2 } from 'lightbox2'
+import { lightGallery } from 'lightgallery.js'
 declare var jquery:any;
 declare var $ :any;
+
 @Component({
     selector: 'app-post',
     templateUrl: './post.component.html',
@@ -24,16 +25,19 @@ export class PostComponent implements OnInit {
         private p: PostService,
   
     ) {
+        
         $( document ).ready(function() {
             setTimeout(() => {
                 $( ".divloader" ).addClass( "hidden" );                
             }, 600);
         }       
-        )}
+        )
+    }
 
     ngOnInit() {
-
         
+
+
         this.route.params.forEach((params: Params) => {
             let id = +params['id'];
             
@@ -45,6 +49,7 @@ export class PostComponent implements OnInit {
             );
 
         });
+        lightGallery(document.getElementById('lightgallery1'));
 
     }
 

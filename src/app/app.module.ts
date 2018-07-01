@@ -9,10 +9,11 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { CurveComponent } from './curve/curve.component';
+import { lightgallery } from 'lightgallery.js';
+
 
 import { routing } from './app.routing';
 
-import { lightbox2 } from 'lightbox2';
 import { appRoutingProviders }  from './app.routes';
 import { PageComponent } from './page/page.component';
 import { JobListComponent } from "./Job-list.component";

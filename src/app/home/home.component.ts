@@ -34,6 +34,9 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         $( function() {
+            $(".tech").click(function(){
+                $("li").removeClass("hidden");
+            });
             $( "#research" ).on( "click", function() {
               $( ".research" ).toggleClass( "hidden", 5000 );
               $( "#research" ).toggleClass( "actile-tech", 5000 );
