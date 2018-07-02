@@ -1,25 +1,11 @@
-<button class="active btn" id="all">Show All</button>
-<button class="btn" id="a">Show A</button>
-<button class="btn" id="b">Show B</button>
-<button class="btn" id="c">Show C</button>
-<button class="btn" id="d">Show D</button>
-
-<div class="spacer"></div>
-
-<div id="parent">
-  <div class="box a b">A &amp; B</div>
-  <div class="box a">A</div>
-  <div class="box b">B</div>
-  <div class="box c">C</div>
-  <div class="box d">D</div>
-</div>
 
 
 <section id="projects" class="container mb-10">
         <h2 class="text-center">My Projects</h2>
         <div class="wrapper mb-10">
                 <ul id="tech">
-                     <li id="research" class="tech">Research, Study &amp; Pageflow</li>
+                    <li id="all" class="active tech">All Techs</li>
+                  <li id="research" class="tech">Research, Study &amp; Pageflow</li>
                       <li id="code" class="tech">Front-End Code</li>
                       <li id="mkt" class="tech">Branding &amp; Marketing</li>
                       <li id="ui" class="tech ">Pixel Perfect Mockup &amp; Prototype</li>
@@ -36,7 +22,7 @@
     <section class="container">
 
        
-  <div class="row m-auto">
+  <div id="parent" class="row m-auto">
       <div *ngFor="let post of posts" class="{{post.acf.hometech}} col-md-4 col-lg-3 col-xs-12">
 
         <a [routerLink]="['/post', post.id]" class="tile  {{ post.acf.tilecolor }}">
