@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { PostService } from '../post.service';
 import { CurveComponent} from '../curve/curve.component';
-import { lightGallery } from 'lightgallery.js'
 declare var jquery:any;
 declare var $ :any;
 
@@ -49,7 +48,6 @@ export class PostComponent implements OnInit {
             );
 
         });
-        lightGallery(document.getElementById('lightgallery1'));
 
     }
 

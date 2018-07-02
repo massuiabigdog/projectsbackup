@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { CurveComponent } from './curve/curve.component';
-import { lightgallery } from 'lightgallery.js';
-
 
 import { routing } from './app.routing';
 
