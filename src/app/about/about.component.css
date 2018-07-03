@@ -1,0 +1,39 @@
+.company-logo {
+    width: 100%;
+    max-width: 100px;
+    margin-right: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.responsabilities {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-bottom: 4px;
+}
+
+.responsabilities-text {
+
+    font-size: 12px;
+    line-height: 26px;
+    color: #000;
+    font-weight: 600;
+}
+
+.experience-box {
+    text-align: center;
+    box-shadow: 2px 2px 16px #ccc;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+    padding: 12px;
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+
+}
+.experience-box:hover {
+    box-shadow: 2px 2px 2px #ccc;
+    transition: opacity 0.3s ease;
+
+}

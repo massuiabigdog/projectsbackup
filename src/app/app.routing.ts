@@ -8,6 +8,7 @@ import { JobListComponent } from "./Job-list.component";
 import { JobDetailComponent } from "./Job-detail.component";
 import { PostComponent } from './post/post.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { NgModule } from "@angular/core";
 
@@ -15,7 +16,7 @@ import { NgModule } from "@angular/core";
         { path: '', redirectTo: '/home', pathMatch: 'full'},
         { path: 'about', component: AboutComponent},
         { path: 'page', component: PageComponent},   
-        { path: 'footer', component: HomeComponent},   
+        { path: 'contact', component: ContactComponent},   
         { path: 'home', component: HomeComponent},   
         { path: 'post/:id', component: PostComponent},
         { path: 'Jobs/:name', component: JobDetailComponent},

@@ -18,6 +18,8 @@ export class PageComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       console.log(params);
+      document.getElementById('mydiv').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg">';
+
     })
   }
 }

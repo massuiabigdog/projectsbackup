@@ -22,11 +22,7 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('button').click(function()
-  {
-    alert('hi');
-  })
-
+    
   $( document ).ready(function() {
     console.log( "ready!" );
 

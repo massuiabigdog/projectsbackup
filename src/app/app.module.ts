@@ -19,6 +19,7 @@ import { JobDetailComponent } from "./Job-detail.component";
 import { PostComponent } from './post/post.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FooterComponent } from './footer/footer.component';
     PostComponent,
     HomeComponent,
     CurveComponent,
+    ContactComponent,
  ],
   imports: [
     BrowserModule,
