@@ -4,6 +4,7 @@ import { HomePostService } from '../homepost.service';
 declare var jquery:any;
 declare var $ :any;
 
+
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -22,14 +23,6 @@ export class HomeComponent implements OnInit {
 
         );
         console.log(this.posts);
-
-
-        $( document ).ready(function() {
-            setTimeout(() => {
-                $( ".divloader" ).addClass( "hidden" );                
-            }, 1000);
-
-        });
     }
 
     ngOnInit() {

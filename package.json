@@ -34,8 +34,8 @@
     "lg-video": "^1.2.2",
     "lg-zoom": "^1.1.0",
     "ng-http-loader": "^0.4.0",
-    "photoswipe": "^4.1.2",
     "rxjs": "^5.5.6",
+    "simplelightbox": "^1.13.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     console.log( "start!" );
 
 
-    this.http.get('http://www.tmassuia.16mb.com/api/wp-json/wp/v2/projects?per_page=100').subscribe( data => {
+    this.http.get('http://www.tmassuia.16mb.com/api/wp-json/wp/v2/posts').subscribe( data => {
       
       for(let key in data){
         if(data.hasOwnProperty(key)){
@@ -31,24 +31,8 @@ export class AboutComponent implements OnInit {
 
 
       console.log(this.posts);
-      $( "#divloader" ).addClass( "hidden" );
     })
 
   }
   
-}
-
-
-export class JobListComponent {
-    constructor(private router: Router){}
-    Jobs = [
-        {"id": 1, "name": "Angular"},
-        {"id": 2, "name": "React"},
-        {"id": 3, "name": "Node"},
-    ]
-    onSelect(Job){
-        this.router.navigate(['/Jobs', Job.name]);
-    }
-
-    
 }

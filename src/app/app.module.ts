@@ -20,6 +20,7 @@ import { PostComponent } from './post/post.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     CurveComponent,
     ContactComponent,
+    LoaderComponent,
  ],
   imports: [
     BrowserModule,

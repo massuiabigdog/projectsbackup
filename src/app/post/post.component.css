@@ -3,3 +3,7 @@
         margin-bottom: -60px;
         z-index: 1;
     }
+
+    .sl-wrapper .sl-image {
+        box-shadow: 1px 0px 18px #ccc;
+    }

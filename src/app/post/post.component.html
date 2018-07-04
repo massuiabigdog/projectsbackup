@@ -1,32 +1,4 @@
-
-<div class="divloader">
-    <div class="radar-spinner" :style="spinnerStyle">
-        <div class="circle">
-          <div class="circle-inner-container">
-            <div class="circle-inner"></div>
-          </div>
-        </div>
-      
-        <div class="circle">
-          <div class="circle-inner-container">
-            <div class="circle-inner"></div>
-          </div>
-        </div>
-      
-        <div class="circle">
-          <div class="circle-inner-container">
-            <div class="circle-inner"></div>
-          </div>
-        </div>
-      
-        <div class="circle">
-          <div class="circle-inner-container">
-            <div class="circle-inner"></div>
-          </div>
-        </div>
-      </div>
-
-</div>
+<app-loader></app-loader>
 
 <section  id="banner" class="topbanner container-fluid covered {{ posts.acf.tilecolor }}" >
    
@@ -48,10 +20,9 @@
 <div  class="text-center wrapper">
   <li class=" tech tech-research tech-array" *ngFor="let usedtechs of posts.acf.tech" id="" >{{usedtechs}}</li>
 </div>
-
 <section class="container">
   <h2 class="text-center"> Screenshots </h2>
-      <div class="row screenshots text-center">
+      <div class="gallery row screenshots text-center">
         <a class="col-xs-3 col-lg-2 col-md-3" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
           <img class="example-image" src="{{ posts.acf.photo1.sizes.thumbnail }}" alt="{{ posts.acf.photo1.title }}" />
         </a>

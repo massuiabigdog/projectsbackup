@@ -1,6 +1,4 @@
-<div id="divloader">
-    <div class="loader"></div>
-  </div>
+<app-loader></app-loader>>
 
 <div class="container">
   <div class="row" style="margin: 50px -10px;">
@@ -21,57 +19,32 @@
     <img src="../../assets/responsive-aboutprofile.jpg"/>
 </div>
 </div>
+
 <div class="col-xs-12">
     <h2 class="">Highlighted Expeciences</h2>
   </div>
 
+
+    
+
   <div class="row">
-  
-      <div class="col-md-4 col-xs-12">
+      <div *ngFor="let post of posts" class="col-md-4 col-xs-12">
+            
           <div class="experience-box text-center ">
               <div class="">
-                <img class="company-logo" src="https://amp.businessinsider.com/images/50db38a069bedd0d1000000c-320-246.jpg">
-                <h1>Check-in</h1>
-                <a class="subtitle" href="#" target="_blank">Check-in.com</a>
-                <h3>UI/UX Designer + FrontEnd Developer</h3>
+                <img class="company-logo" src="{{ post.acf.companylogo.sizes.large }}">
+                <h1> {{ post.acf.companyname }} </h1>
+                <a class="subtitle" href="http://{{ post.acf.companywebsite }}" target="_blank">{{post.acf.companywebsite}}</a>
+                <h3>{{post.acf.work}}</h3>
               <hr>
           <h6 class="text-center responsabilities">Major Responsabilities</h6>
-          <p class="responsabilities-text">Creating new products focused on the hospitality sector. Working as an integral part of the development team responsable for validation
-              of wireframes with studies and research with users passing through the approval of mockup until the development of the final code.</p>
+          <p class="responsabilities-text">
+                {{post.acf.responsabilities}}
+          </p>
           </div>
           </div>
           </div>
 
-          <div class="col-md-4 col-xs-12">
-              <div class="experience-box text-center ">
-                  <div class="">
-                    <img class="company-logo" src="https://amp.businessinsider.com/images/50db38a069bedd0d1000000c-320-246.jpg">
-                    <h1>Check-in</h1>
-                    <a class="subtitle" href="#" target="_blank">Check-in.com</a>
-                    <h3>UI/UX Designer + FrontEnd Developer</h3>
-                    <h6>Feb 2016 - Until Now</h6>
-
-                  <hr>
-              <h6 class="text-center responsabilities">Major Responsabilities</h6>
-              <p class="responsabilities-text">Creating new products focused on the hospitality sector. Working as an integral part of the development team responsable for validation
-                  of wireframes with studies and research with users passing through the approval of mockup until the development of the final code.</p>
-              </div>
-              </div>
-              </div>
-
-              <div class="col-md-4 col-xs-12">
-                  <div class="experience-box text-center ">
-                      <div class="">
-                        <img class="company-logo" src="https://amp.businessinsider.com/images/50db38a069bedd0d1000000c-320-246.jpg">
-                        <h1>Check-in</h1>
-                        <a class="subtitle" href="#" target="_blank">Check-in.com</a>
-                        <h3>UI/UX Designer + FrontEnd Developer</h3>
-                      <hr>
-                  <h6 class="text-center responsabilities">Major Responsabilities</h6>
-                  <p class="responsabilities-text">Creating new products focused on the hospitality sector. Working as an integral part of the development team responsable for validation
-                      of wireframes with studies and research with users passing through the approval of mockup until the development of the final code.</p>
-                  </div>
-                  </div>
-                  </div>
+       
 </div>
 </div>
