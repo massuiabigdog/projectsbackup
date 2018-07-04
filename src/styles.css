@@ -635,8 +635,17 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 }
 
 .gallery img {
-width: auto;
+	width: auto;
+    -webkit-box-shadow: 2px 2px 4px #ccc;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px #ccc;
+    max-height: 220px;
+    margin-bottom: 20px;
 }
+
+.gallery img:hover {
+	box-shadow: 2px 2px 10px #ccc;
+	}
 
 .gallery img.screen {
 	border: 1px solid rgba(0,0,0,.15);
