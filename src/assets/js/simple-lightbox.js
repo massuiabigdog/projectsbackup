@@ -131,7 +131,7 @@ $.fn.simpleLightbox = function( options )
 		closeBtn = $('<button>').addClass('sl-close').html(options.closeText),
 		spinner = $('<div>').addClass('sl-spinner').html('<div></div>'),
 		nav = $('<div>').addClass('sl-navigation').html('<button class="sl-prev">'+options.navText[0]+'</button><button class="sl-next">'+options.navText[1]+'</button>'),
-		counter = $('<div>').addClass('sl-counter').html('<span class="sl-current"></span>/<span class="sl-total"></span>'),
+		counter = $('<div>').addClass('sl-counter').html('<span class="sl-current"></span><span class=""></span>'),
 		animating = false,
 		index = 0,
 		caption = $('<div>').addClass('sl-caption '+options.captionClass+' pos-'+options.captionPosition),

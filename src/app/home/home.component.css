@@ -5,7 +5,9 @@
 .bg-primary {
     height: 600px!important;
 }
-
+.sl-total {
+  display: none;
+}
 
 
 

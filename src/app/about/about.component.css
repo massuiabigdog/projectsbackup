@@ -1,10 +1,15 @@
 .company-logo {
-    width: 100%;
-    max-width: 100px;
-    margin-right: 14px;
+    max-height: 61px;
     margin-top: 14px;
     margin-bottom: 14px;
 }
+
+h3 > span {
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: -5px;
+}
+
 
 .responsabilities {
     font-size: 12px;

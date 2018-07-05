@@ -7,3 +7,7 @@
     .sl-wrapper .sl-image {
         box-shadow: 1px 0px 18px #ccc;
     }
+
+    .sl-total {
+        display: none!important;
+    }

@@ -1,3 +1,7 @@
+.material-icons {
+	vertical-align: middle;
+}
+
 .head-title {
 	margin: 0 0 30px 0;
     line-height: 48px;
@@ -532,18 +536,17 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 
 .tech {
 	font-weight: 600;
-
-	display: inline-block;
-	margin: 0 2px 4px;
-    padding: 4px 10px;
-	font-size: 12px;
-	font-weight: 400px;
-	line-height: 32px;
-	vertical-align: top;
-	color: #000;
-	border: solid 1px #CCC;
+    display: inline-block;
+    margin: 0 2px 9px;
+    padding: 9px 18px;
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 29px;
+    vertical-align: top;
+    color: #000;
+    border: solid 1px #CCC;
 	border-radius: 20px;
-	opacity: .5;
+	opacity: 0.5;
 }
 
 .actile-tech {
