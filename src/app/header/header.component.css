@@ -1,6 +1,7 @@
 .right-menu {
     right: 20px!important;
     position: absolute!important;
+    display: none;
 }
 
 .logo-img {

@@ -1,5 +1,3 @@
-
-
 <section id="projects" class="container mb-10">
         <h2 class="text-center">My Projects</h2>
         <div class="wrapper mb-10">
@@ -14,16 +12,10 @@
                   </ul>
                 </div>
                 </section>
-                <app-loader></app-loader>>
-
-                
-
+                <app-loader></app-loader>
     <section class="container">
-
-       
   <div id="parent" class="row m-auto">
       <div *ngFor="let post of posts" class="{{post.acf.hometech}} col-md-4 col-lg-3 col-xs-12">
-
         <a [routerLink]="['/post', post.id]" class="tile  {{ post.acf.tilecolor }}">
           <div style="height: 100px">
             <img src="{{ post.acf.clientlogo.url }}">

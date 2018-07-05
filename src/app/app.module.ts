@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoaderComponent } from './loader/loader.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { LoaderComponent } from './loader/loader.component';
     CurveComponent,
     ContactComponent,
     LoaderComponent,
+    SidenavComponent,
  ],
   imports: [
     BrowserModule,
