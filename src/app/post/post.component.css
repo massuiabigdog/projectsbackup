@@ -11,3 +11,12 @@
     .sl-total {
         display: none!important;
     }
+
+    .tech-text {
+        font-size: 13px;
+        line-height: 52px;
+        display: block;
+        font-weight: 600;
+        opacity: 0.5;
+        margin-top: -20px;
+    }

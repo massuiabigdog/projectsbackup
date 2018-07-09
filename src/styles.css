@@ -1,6 +1,21 @@
 .material-icons {
 	vertical-align: middle;
 }
+
+.mb-10 {
+	margin-bottom: 10px!important;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 .yellow {
 	color: #ffc107;
 }
@@ -264,6 +279,10 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 
 .mt-40 {
 	margin-top: 40px;
+}
+
+.mt-20 {
+	margin-top: 20px;
 }
 
 .mb-20 {
@@ -561,7 +580,7 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
     vertical-align: top;
     color: #000;
     border: solid 1px #CCC;
-	border-radius: 20px;
+	border-radius: 30px;
 	opacity: 0.5;
 }
 

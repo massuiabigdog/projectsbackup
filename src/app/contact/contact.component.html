@@ -7,17 +7,12 @@
       <div class="modal-content">
         
         <div class="modal-body">
-                <div class="row">
-                        <div class="">
+                <div class="text-center">
                             <h3 class="thanks">Thanks for your time!</h3>
-                        </div>
-                        <!--/.col-sm-12-->
-                        <div class="">
+                          
                             <p class="sub-text">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
-                        </div>
-                        <!--/.col-sm-10.col-sm-offset-1-->
                     </div>
-                <form>
+                <form name="contact-form" method="post" onsubmit="alert('Thanks', 'For contact me.', 'success', {buttons: false, timer: 9999})" action="https://formspree.io/thiago.massuia@hotmail.com"> 
                         <div class="form-group">
                           <input type="text" name="nameinput" class="form-control" id="name" required placeholder="Your Name">
                         </div>
@@ -26,8 +21,12 @@
                               </div>
                         <div class="form-group">
                             <textarea required placeholder="Your Message" class="form-control" rows="5" id="comment"></textarea>
-                        </div>                             
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>            
+                        <div class="text-center">                 
+                        <button type="submit">
+                          <a style="color: #fff" class="ghost">Submit</a>
+                        </button>
+                      </div>
                       </form>
         </div>
        
