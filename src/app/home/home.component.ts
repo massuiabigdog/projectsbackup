@@ -28,9 +28,9 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         var $btns = $('.tech').click(function() {
   if (this.id == 'all') {
-    $('#parent > div').fadeIn(450);
+    $('#parent > div').fadeIn(950);
   } else {
-    var $el = $('.' + this.id).fadeIn(450);
+    var $el = $('.' + this.id).fadeIn(950);
     $('#parent > div').not($el).hide();
   }
   $btns.removeClass('active');

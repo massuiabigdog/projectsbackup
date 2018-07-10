@@ -757,7 +757,9 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 }
 
 @media screen and (max-width: 767px) {
-
+.tile {
+	opacity: 1;
+}
 	#banner p {
 		margin: auto;
 		margin-bottom: 20px;
