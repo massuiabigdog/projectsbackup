@@ -15,13 +15,13 @@
                 <app-loader></app-loader>
     <section class="container">
   <div id="parent" class="row m-auto">
-      <div *ngFor="let post of posts" class="{{post.acf.hometech}} col-md-4 col-lg-3 col-xs-12">
+      <div *ngFor="let post of posts" class="{{post.acf.hometech}}  col-md-4 col-lg-3 col-xs-12">
         <a [routerLink]="['/post', post.id]" class="tile  {{ post.acf.tilecolor }}">
-          <div style="height: 100px">
+          <div class="tile-bg">
             <img src="{{ post.acf.clientlogo.url }}">
-          </div>
             <h3 class="tile-title">{{ post.title.rendered }}</h3>
-          
+          </div>
+
           </a>
 
     </div>

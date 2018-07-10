@@ -31,27 +31,17 @@ export class PostComponent implements OnInit {
     }
 
     ngOnInit() {
-        
-       document.getElementsByClassName("ux")
-
+        this.posts = [];
         this.route.params.forEach((params: Params) => {
-            let id = +params['id'];
             
+            let id = +params['id'];
+            console.log(params);
 
             //Post
             this.p.getPost(id).subscribe(
                 r => this.posts = r,
                 error => console.error('Error: ' + error)
             );
-
-
-   
-
-            $( "#code" ).replaceWith( "<h2><i class='material-icons'>code</i>1 heading</h2>" );
-$( ".ux" ).replaceWith( "<h2><i class='material-icons'>code</i>2 heading</h2>" );
-
-$( ".research" ).replaceWith( "<h2><i class='material-icons'>code</i>3 heading</h2>" );
-
         });
 
 

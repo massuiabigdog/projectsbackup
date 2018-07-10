@@ -1,9 +1,9 @@
 <app-loader></app-loader>
 
 <section  id="banner" class="topbanner container-fluid covered {{ posts.acf.tilecolor }}" >
-   
-  <div class="wrapper" class="row pb-20">
-      <div class="col-md-6 col-xs-12 text-center">
+  <div class="gradient-bg row pb-20">
+    
+    <div class="col-md-6 col-xs-12 text-center">
           <img src="{{ posts.acf.heroimage.sizes.medium }}">
       </div>
 
@@ -25,6 +25,8 @@
 <section class="container">
   <h2 class="text-center"> Screenshots </h2>
   <div class="gallery row screenshots text-center">
+      
+
       <a class="col-xs-6 col-lg-3 col-md-4" href="{{ posts.acf.photo1.sizes.large }}" data-title="{{ posts.acf.photo1.title }}" data-lightbox="example-set">
         <img class="example-image" src="{{ posts.acf.photo1.sizes.medium }}" alt="{{ posts.acf.photo1.title }}" />
       </a>
@@ -74,6 +76,8 @@
       </a>
 </div>
  </section>
-<div class="text-center mb-20">
- <a class="ghost btn-light " routerLinkActive="active"  [routerLink]="['../../home']" >Back to projects</a>
+<div class="text-center mb-20"> 
+    <!-- <a class="ghost btn-light" [routerLink]="['/post', 203]">Preview</a>
+    <a class="ghost btn-light" [routerLink]="['/post', 215]">next</a> -->
+  <a class="ghost btn-light " routerLinkActive="active"  [routerLink]="['../../home']" >Back to projects</a>
 </div>
