@@ -4,6 +4,10 @@ color: #fff;
 padding-top: 120px;
 }
 
+.github-button{
+    margin: 10px;
+}
+
 #footer > div {
 
 padding: 0 30px;

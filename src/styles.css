@@ -253,6 +253,30 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 	vertical-align: top;
 }
 
+.hero-img {
+	width: 100%;
+    max-width: 340px;
+}
+
+.github-div {
+	margin: auto;
+    text-align: -webkit-match-parent;
+    display: inline-flex;
+}
+
+.navbar{
+	margin-bottom: -1px;
+}
+
+.mr-10 {
+	margin-right: 10px!important;
+}
+
+
+.mr-20 {
+	margin-right: 20px;
+}
+
 .gradient-bg {
 	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 65%, rgba(255,255,255,0.37) 100%);
 	margin: -14px;
@@ -266,6 +290,10 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
     padding-bottom: 1px;
 	margin-bottom: -9px;
 	padding: 10px 0;
+}
+
+.tile-bg:hover{
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,253,253,0.050127801120448177) 65%, rgba(255,255,255,0.1169642857142857) 100%);
 }
 .topbanner::after {
 	background-color: #fff;
@@ -311,7 +339,7 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, q, ul, ol, header, footer, nav, sect
 }
 
 .mb-10 {
-	margin-bottom: 10px;
+	margin-bottom: 10px!important;
 }
 
 body {
@@ -546,7 +574,7 @@ a:hover#logo, a:active#logo {background: none;}
     border: solid 1px transparent;
 	
     border-radius: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
     -webkit-transition: opacity ease-out .4s;
     transition: opacity ease-out .4s;
     background-size: 108px 72px;
@@ -578,7 +606,7 @@ a:hover.white-text {color: rgba(255,255,255,.75);}
 .tile-blue {background-color: #1869af;}
 .tile-cyan {background-color: #1fbbee;}
 .tile-yellow {background-color: #FFC107	;}
-.tile-orange {background-color: #FF9800;}
+.tile-orange {background-color: #f26522;}
 .tile-lightgreen {background-color: #8BC34A	;}
 .tile-purple {background-color: #7B1FA2	;}
 .tile-darkblue {background-color: #1A237E;}

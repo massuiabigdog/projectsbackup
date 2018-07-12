@@ -18,6 +18,9 @@ export class SidenavComponent implements OnInit {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
   });
+
+
+
   }
 
 }
