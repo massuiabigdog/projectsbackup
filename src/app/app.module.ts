@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { CurveComponent } from './curve/curve.component';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { routing } from './app.routing';
 
 import { appRoutingProviders }  from './app.routes';
@@ -46,7 +46,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     HttpClientModule,
     routing,
   ],
-  providers: [appRoutingProviders],
+  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
